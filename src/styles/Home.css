@@ -1,0 +1,153 @@
+/* src/styles/Home.css */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  position: relative;
+  flex: 1;
+  border: 2px solid #000; /* Borde del body */
+  margin: 20px; /* Margen para que no toque los bordes */
+
+  background-color: #F3E9C5;
+  border-radius: 15px; /* Agregar border-radius al body */
+}
+
+/* Recuadro superior en el body */
+.hero-section {
+  /*height: 500px;*/
+  width: 100%;  /* Ocupa el ancho completo del viewport */
+  min-height: 50vh; /* Define una altura mínima relativa al viewport, 50% del alto */
+  background-image: url('public/assets/img_descripcion.png');
+  background-size: cover; /* Asegura que la imagen cubra toda la sección */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  border-radius: 30px;
+  position: relative;
+}
+
+.hero-content {
+  margin-left: 2%;
+  max-width: 60%;
+  position: absolute;
+}
+
+.hero-title {
+  font-size: 60px;
+  color: #000;
+  padding-top: 0%;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  margin-top: 3%;
+  font-size: 18px;
+  color: #000;
+  
+}
+
+.hero-image {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 300px; /* Ajusta este valor para cambiar el tamaño */
+  height: auto;
+  z-index: 1;
+}
+
+/* Estilos para el título "Recomendaciones" */
+.section-title {
+  font-size: 24px;
+  color: #C6320B !important;
+  margin-left: 20px; /* Alineado a la izquierda con margen */
+  margin-bottom: 20px;
+}
+
+/* Grid de recetas */
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 20px; /* Añadir padding lateral para alineación */
+}
+
+.recipe-card {
+  background-color: #F3E9C5; /* Fondo de la receta */
+  
+  padding: 10px;
+  text-align: center; /* Centra el texto dentro del card */
+  border-radius: 10px;
+  /* Añadimos flexbox para alinear verticalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: space-between; /* Espacio entre elementos */
+  
+}
+
+/* Ajustes en .recipe-card img */
+.recipe-card img {
+  width: 90%; /* Ajusta el ancho de la imagen */
+  height: 150px;
+  padding: 5px; /* Padding de 5px a la imagen */
+  border-radius: 20px;
+  margin-bottom: 10px; /* Añade espacio debajo de la imagen */
+}
+
+/* Ajustes en .recipe-name */
+.recipe-name {
+  display: block;
+  width: 87%; /* Para que ocupe todo el ancho del card */
+  font-size: 16px;
+  color: #000;
+  background-color: #F8C97C;
+  padding: 10px;
+  text-decoration: none;
+  /*border: 2px solid #000;*/
+  border-radius: 5px;
+  text-align: center; /* Centra el texto dentro del botón */
+  font-weight: bold;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.recipe-name:hover {
+  background: #FF7700;
+  color: white;
+  font-size: 1.5em;
+}
+
+/* Efecto hover en los botones de receta */
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+  .recipes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-image {
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recipes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-image {
+    width: 200px;
+  }
+}

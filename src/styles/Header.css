@@ -1,0 +1,111 @@
+/* src/styles/Header.css */
+
+/* Header container */
+.header {
+  background-color: #C6320B;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+/* Header content wrapper */
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Left section inside the header */
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo section */
+.logo-section {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+/* Logo image */
+.logo-placeholder {
+  width: 80px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Site name text */
+.site-name {
+  font-size: 24px;
+  color: #000;
+  margin-right: 20px;
+}
+
+/* Navigation menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation links and dropdown buttons */
+.nav-link,
+.dropbtn {
+  color: #000;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: #E5D3B3;
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Hover effect for nav links and buttons */
+.nav-link:hover,
+.dropbtn:hover {
+  background-color: #F3E9C5;
+  color: #C6320B;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  position: absolute;
+  background-color: #E5D3B3;
+  min-width: 160px;
+  z-index: 1;
+  border: 2px solid #000;
+  border-radius: 10px;
+  top: 100%;
+  left: 0;
+}
+
+/* Links inside dropdown */
+.dropdown-content a {
+  color: #000;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #000;
+}
+
+/* Remove bottom border from last link */
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+  background-color: #F3E9C5;
+  color: #C6320B;
+}

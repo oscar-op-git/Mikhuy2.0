@@ -1,0 +1,20 @@
+
+/* Aseguramos que html y body ocupen toda la altura */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* El contenedor principal utiliza Flexbox */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* El contenedor de la página agrega márgenes */
+.page-container {
+  margin: 0 20px; /* Ajusta el valor según tus necesidades */
+  flex: 1;
+}
